@@ -1,0 +1,24 @@
+
+public class Card implements Interface{
+private int randomNum;
+private static int track;
+
+@Override
+public String toString(){
+	return String.format("Card#: %d\n# of Cards picked: %d", randomNum,track);
+}
+	@Override
+	public int generateRanNum() {
+	keepTrack();
+	randomNum = 1 + (int)(Math.random()*13);
+	return randomNum;
+		
+	}
+
+	@Override
+	public int keepTrack() {
+		track++;
+		return track;
+	}
+
+}
