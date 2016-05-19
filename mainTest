@@ -1,0 +1,37 @@
+
+public class MainTest {
+
+	public static void main(String[] args) {
+		Interface[] interfaceObjects = new Interface[6];
+		interfaceObjects[0] = new Dice();
+		interfaceObjects[0].generateRanNum();
+		System.out.println(interfaceObjects[0]);
+		
+		
+		interfaceObjects[1]= new Dice();
+		interfaceObjects[1].generateRanNum();
+		System.out.println(interfaceObjects[1]);
+		
+		
+		
+		interfaceObjects[2] = new Card();
+		interfaceObjects[2].generateRanNum();
+		System.out.println(interfaceObjects[2]);
+		
+		
+		interfaceObjects[3]= new Card();
+		interfaceObjects[3].generateRanNum();
+		System.out.println(interfaceObjects[3]);
+		
+		
+		interfaceObjects[4] = new Card();
+		interfaceObjects[4].generateRanNum();
+		System.out.println(interfaceObjects[4]);
+		
+		interfaceObjects[5]= new Card();
+		interfaceObjects[5].generateRanNum();
+		System.out.println(interfaceObjects[5]);
+
+	}
+
+}
