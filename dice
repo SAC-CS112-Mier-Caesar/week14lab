@@ -1,0 +1,25 @@
+
+
+public class Dice implements Interface {
+private int randomNum;
+private static int track;
+
+@Override
+public String toString(){
+	return String.format("# rolled: %d\n# of times rolled: %d ", randomNum,track);
+}
+
+@Override
+public int generateRanNum() {
+	keepTrack();
+	randomNum = 1 + (int)(Math.random()*6);
+	return randomNum;
+}
+
+@Override
+public int keepTrack() {
+	track++;
+	return track;
+}
+
+}
